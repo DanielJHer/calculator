@@ -1,38 +1,55 @@
 
 body {
     background-color: teal;
+    font-family: 'Roboto', sans-serif;
 }
 
-.calculator-grid {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    grid-template-columns: repeat(4, 100px);
-
+.calculator {
+    background-color: rgb(112, 112, 111);
+    padding: 2px;
+    max-width: 250px;
+    margin: 10vh auto 0 auto;
+    box-shadow: 0px 0px 43px 17px rgb(132, 139, 150);
 }
 
-.calculator-grid > button {
-    font-size: 2rem;
-    border: 1px solid white;
-    outline: none;
-}
-
-.output {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-around;
-    flex-direction: column;
+.display {
+    text-align: right;
+    height: 40px;
+    line-height: 50px;
+    padding: 16px 8px;
+    font-size: 25px;
     word-wrap: break-word;
     word-break: break-all;
-    padding: 10px;
-    grid-column: 1/ -1;
-    background-color: rgb(1, 78, 78) 
+    background-color: rgb(197, 196, 196);
+    border: 2px rgb(112, 112, 111) solid;
+  
 }
 
-.output .previous-operand {
-    color: white;
+.preDisplay {
+    min-height: 32px;
+    font-size: 20px;
 }
 
-.output .current-operand {
+.postDisplay {
+    min-height: 64px;
+    font-size: 40px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.button {
+    border: 0.5px solid #999;
+    line-height: 50px;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: rgb(0, 97, 97);
     color: white;
+    transition: 0.25s ease-in-out;
 }
