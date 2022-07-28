@@ -1,27 +1,27 @@
 
 body {
     background-color: teal;
-    font-family: 'Roboto', sans-serif;
 }
 
 .calculator {
     background-color: rgb(112, 112, 111);
-    padding: 2px;
-    max-width: 250px;
+    padding: 4px;
+    max-width: 350px;
     margin: 10vh auto 0 auto;
     box-shadow: 0px 0px 43px 17px rgb(132, 139, 150);
 }
 
 .display {
     text-align: right;
-    height: 40px;
+    height: 80px;
     line-height: 50px;
-    padding: 16px 8px;
+    padding: 12px 6px;
     font-size: 25px;
     word-wrap: break-word;
     word-break: break-all;
-    background-color: rgb(197, 196, 196);
+    background-color: rgb(208, 206, 206);
     border: 2px rgb(112, 112, 111) solid;
+    font-family: 'Quicksand', 'Roboto', sans-serif;
   
 }
 
@@ -31,21 +31,25 @@ body {
 }
 
 .postDisplay {
-    min-height: 64px;
-    font-size: 40px;
+    min-height: 32px;
+    font-size: 20px;
 }
 
 .grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+
 }
 
 .button {
-    border: 0.5px solid #999;
+    font-family: 'Quicksand', 'Roboto', sans-serif;
+    background-color: rgb(208, 206, 206);
+    border: 2px rgb(112, 112, 111) solid;
     line-height: 50px;
     text-align: center;
     font-size: 20px;
     cursor: pointer;
+
 }
 
 .button:hover {
